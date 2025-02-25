@@ -1,1 +1,1 @@
-Los usuarios se pueden editar y eliminar
+Ya los administradores puedes ver, agregar y eliminar categorias
