@@ -1,5 +1,7 @@
 import { response } from "express";
 import Cart from "./cart.model.js";
+import Invoice from "../invoice/invoice.model.js";
+import Product from "../product/product.model.js";
 
 export const getCart = async (req, res = response) => {
     try {
@@ -91,3 +93,43 @@ export const clearCart = async (req, res = response) => {
         res.status(500).json({ success: false, msg: "Error deleting cart ❌", error });
     }
 };
+
+export const addInvoice = async (req, res = response) => {
+    try {
+        const cart = await Cart.findOne({ user: req.usuario._id }).populate("products.product");
+        if (!cart || cart.products.length === 0) {
+            return res.status(400).json({ success: false, msg: "Cart is empty ❌" });
+        }
+
+        let total = 0;
+        for (const item of cart.products) {
+            if (!item.product || item.product.stock < item.quantity) {
+                return res.status(400).json({ success: false, msg: `Not enough stock for ${item.product?.name || "Unknown Product"} ❌` });
+            }
+            total += parseFloat(item.product.price) * item.quantity;
+        }
+
+        const invoice = new Invoice({
+            user: req.usuario._id,
+            products: cart.products.map(item => ({
+                product: item.product._id,
+                quantity: item.quantity
+            })),
+            total
+        });
+        await invoice.save();
+
+        for (const item of cart.products) {
+            await Product.findByIdAndUpdate(item.product._id, {
+                $inc: { stock: -item.quantity, sold: item.quantity }
+            }, { new: true });
+        }
+
+        await Cart.findOneAndDelete({ user: req.usuario._id });
+        res.status(201).json({ success: true, msg: "Purchase completed ✅ Invoice created", invoice });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ success: false, msg: "Error completing purchase ❌", error });
+    }
+};
+
