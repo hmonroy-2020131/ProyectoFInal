@@ -1,0 +1,68 @@
+{
+    "info": {
+        "_postman_id": "c82a5b9f-b941-4e94-b34e-0fd9d352134a",
+        "name": "Login/register",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Register",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3001/ProyectoFinal/v1/auth/register",
+                    "path": [
+                        "ProyectoFinal",
+                        "v1",
+                        "auth",
+                        "register"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n  \"name\": \"Eithan\",\r\n  \"surname\": \"Monroy\",\r\n  \"username\": \"eithanmv\",\r\n  \"email\": \"eithanmv@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}"
+                }
+            }
+        },
+        {
+            "name": "Login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3001/ProyectoFinal/v1/auth/login",
+                    "path": [
+                        "ProyectoFinal",
+                        "v1",
+                        "auth",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n  \"username\": \"eithanmv\",\r\n  \"password\": \"12345678\"\r\n}"
+                }
+            }
+        }
+    ]
+}

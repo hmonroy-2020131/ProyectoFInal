@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "67be516def6ba5b911eb6610"
+  },
+  "name": "Default",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:25:33.946Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:25:33.946Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be5663221cde31fd2ad88f"
+  },
+  "name": "Ropa",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:46:43.821Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:46:43.821Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be58722e86e1ffc38c2644"
+  },
+  "name": "Electrónica",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:55:30.612Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:55:30.612Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be587f2e86e1ffc38c2648"
+  },
+  "name": "Hogar",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:55:43.458Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:55:43.458Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be58892e86e1ffc38c264c"
+  },
+  "name": "Deportes",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:55:53.440Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:55:53.440Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be58962e86e1ffc38c2650"
+  },
+  "name": "Juguetes",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:56:06.563Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:56:06.563Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be58f82e86e1ffc38c2654"
+  },
+  "name": "Muebles",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:57:44.995Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:57:44.995Z"
+  }
+}]

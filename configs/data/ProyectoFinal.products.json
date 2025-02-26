@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "67be57df2e86e1ffc38c2640"
+  },
+  "name": "Camiseta Deportiva",
+  "description": "Camiseta transpirable para entrenamiento y deporte.",
+  "price": 29.99,
+  "stock": 100,
+  "category": {
+    "$oid": "67be5663221cde31fd2ad88f"
+  },
+  "sold": 0,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:53:03.912Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:53:03.912Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be59252e86e1ffc38c2657"
+  },
+  "name": "Zapatillas Running Pro",
+  "description": "Zapatillas ligeras y cómodas para correr largas distancias.",
+  "price": 79.99,
+  "stock": 40,
+  "category": {
+    "$oid": "67be58892e86e1ffc38c264c"
+  },
+  "sold": 0,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:58:29.762Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:58:29.762Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be59432e86e1ffc38c265a"
+  },
+  "name": "Aspiradora Robot",
+  "description": "Aspiradora inteligente con detección de obstáculos y programación automática.",
+  "price": 299.99,
+  "stock": 15,
+  "category": {
+    "$oid": "67be587f2e86e1ffc38c2648"
+  },
+  "sold": 0,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:58:59.913Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:58:59.913Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be595b2e86e1ffc38c265d"
+  },
+  "name": "Teclado Mecánico RGB",
+  "description": "Teclado mecánico retroiluminado con switches intercambiables.",
+  "price": 109.99,
+  "stock": 35,
+  "category": {
+    "$oid": "67be58722e86e1ffc38c2644"
+  },
+  "sold": 0,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:59:23.905Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:59:23.905Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be59892e86e1ffc38c2662"
+  },
+  "name": "Cámara de Seguridad WiFi",
+  "description": "Cámara con visión nocturna y detección de movimiento.",
+  "price": 89.99,
+  "stock": 20,
+  "category": {
+    "$oid": "67be587f2e86e1ffc38c2648"
+  },
+  "sold": 0,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-26T00:00:09.783Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T00:00:09.783Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be59a42e86e1ffc38c2665"
+  },
+  "name": "Silla Gamer Ergonómica",
+  "description": "Silla ajustable con soporte lumbar y diseño ergonómico.",
+  "price": 199.99,
+  "stock": 10,
+  "category": {
+    "$oid": "67be58962e86e1ffc38c2650"
+  },
+  "sold": 0,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-26T00:00:36.612Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T00:00:36.612Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be5a7a2e86e1ffc38c2672"
+  },
+  "name": "Lego Starship Set",
+  "description": "Set de construcción de una nave espacial con piezas detalladas.",
+  "price": 89.99,
+  "stock": 50,
+  "category": {
+    "$oid": "67be58962e86e1ffc38c2650"
+  },
+  "sold": 0,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-26T00:04:10.248Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T00:04:10.248Z"
+  }
+}]

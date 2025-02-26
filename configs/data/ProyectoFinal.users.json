@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "67be516def6ba5b911eb660d"
+  },
+  "name": "Elmer",
+  "surname": "Santos",
+  "username": "elmersantos",
+  "email": "elmersantos@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$GGzn19sDF1urw8zg2k7qxQ$nY8pQRyBTuzf0+Zpibl0sl9jg2E3pfY8Nh3ST9lHN2E",
+  "role": "ADMIN",
+  "estado": true,
+  "invoices": [],
+  "createdAt": {
+    "$date": "2025-02-25T23:25:33.906Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:25:33.906Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be51c8ef6ba5b911eb6614"
+  },
+  "name": "Eithan",
+  "surname": "Monroy",
+  "username": "eithanmv",
+  "email": "eithanmv@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$JQgjrA7yEIzV0/+jvwp7tQ$rlf3vmDfrzoIh6qNz4kcHxUppqQ2TR8iBUKFzdd5mIw",
+  "role": "CLIENT",
+  "estado": true,
+  "invoices": [],
+  "createdAt": {
+    "$date": "2025-02-25T23:27:04.142Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:27:04.142Z"
+  }
+}]

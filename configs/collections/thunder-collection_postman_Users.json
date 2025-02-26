@@ -1,0 +1,99 @@
+{
+    "info": {
+        "_postman_id": "b5dbe32f-4266-40fc-924c-77acb189f1a5",
+        "name": "Users",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Listar",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3001/ProyectoFinal/v1/users",
+                    "path": [
+                        "ProyectoFinal",
+                        "v1",
+                        "users"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                }
+            }
+        },
+        {
+            "name": "Eliminar usuario",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:3001/ProyectoFinal/v1/users/67bddaa360ff17bcef84dce6",
+                    "path": [
+                        "ProyectoFinal",
+                        "v1",
+                        "users",
+                        "67bddaa360ff17bcef84dce6"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                },
+                "header": [
+                    {
+                        "key": "x-token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGFhMzYwZmYxN2JjZWY4NGRjZTYiLCJpYXQiOjE3NDA0OTY0NTUsImV4cCI6MTc0MDUwMDA1NX0.bNJgIMvANBnfSKI7J6ssCz1kU8EgX0ef-YYeUKr62Xc"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"password\": \"123456789\"\n}"
+                }
+            }
+        },
+        {
+            "name": "Editar",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:3001/ProyectoFinal/v1/users/67bddaa360ff17bcef84dce6",
+                    "path": [
+                        "ProyectoFinal",
+                        "v1",
+                        "users",
+                        "67bddaa360ff17bcef84dce6"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                },
+                "header": [
+                    {
+                        "key": "x-token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGFhMzYwZmYxN2JjZWY4NGRjZTYiLCJpYXQiOjE3NDA0OTY1OTQsImV4cCI6MTc0MDUwMDE5NH0.VGfSngwK1OHLs-HFAIk78E3tOgkeWkcYaGXVB54XN88"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n  \"name\": \"Brandon\",\r\n  \"surname\": \"Soberanis\",\r\n  \"username\": \"bsobe\",\r\n  \"email\": \"bsobe@gmail.com\",\r\n  \"password\": \"123456789\",\r\n  \"newPassword\": \"12345678\"\r\n}\r\n"
+                }
+            }
+        }
+    ]
+}
