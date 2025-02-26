@@ -1,1 +1,1 @@
-Productos terminado.
+Ya los clientes pueden agregar productos al carrito.
