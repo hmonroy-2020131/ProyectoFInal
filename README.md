@@ -1,1 +1,1 @@
-Las facturas se pueden editar por medio de el administrador y agregando colecciones y data nueva
+Proyecto finalizado.
