@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "da5e6ff2-7291-4a16-a5dc-b27cb201243f",
+		"name": "Cart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42630298"
+	},
+	"item": [
+		{
+			"name": "Listar ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjZlZDJmNGViMTY4MTFhMTAwZTUiLCJpYXQiOjE3NDA2MTc1MDIsImV4cCI6MTc0MDYyMTEwMn0.fix-kIUFTuBg54cG7ee-S86XplcjUY0PLewtOgLcYaY"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjZlZDJmNGViMTY4MTFhMTAwZTUiLCJpYXQiOjE3NDA2MTc1MDIsImV4cCI6MTc0MDYyMTEwMn0.fix-kIUFTuBg54cG7ee-S86XplcjUY0PLewtOgLcYaY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productId\": \"67be5a7a2e86e1ffc38c2672\",\r\n  \"quantity\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/cart/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"cart",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar cantidad de producto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjZlZDJmNGViMTY4MTFhMTAwZTUiLCJpYXQiOjE3NDA2MTc1MDIsImV4cCI6MTc0MDYyMTEwMn0.fix-kIUFTuBg54cG7ee-S86XplcjUY0PLewtOgLcYaY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"productId\": \"67be5a7a2e86e1ffc38c2672\",\n  \"quantity\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/cart/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"cart",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un producto",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjZlZDJmNGViMTY4MTFhMTAwZTUiLCJpYXQiOjE3NDA2MTc1MDIsImV4cCI6MTc0MDYyMTEwMn0.fix-kIUFTuBg54cG7ee-S86XplcjUY0PLewtOgLcYaY"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/cart/remove/67be5a7a2e86e1ffc38c2672",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"cart",
+						"remove",
+						"67be5a7a2e86e1ffc38c2672"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar carrito completo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjZlZDJmNGViMTY4MTFhMTAwZTUiLCJpYXQiOjE3NDA2MTc1MDIsImV4cCI6MTc0MDYyMTEwMn0.fix-kIUFTuBg54cG7ee-S86XplcjUY0PLewtOgLcYaY"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/cart/remove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"cart",
+						"remove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Factura",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjZlZDJmNGViMTY4MTFhMTAwZTUiLCJpYXQiOjE3NDA2MTc1MDIsImV4cCI6MTc0MDYyMTEwMn0.fix-kIUFTuBg54cG7ee-S86XplcjUY0PLewtOgLcYaY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/cart/addInvoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"cart",
+						"addInvoice"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

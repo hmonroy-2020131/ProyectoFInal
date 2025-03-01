@@ -36,10 +36,7 @@ const UserSchema = Schema({
         type: Boolean,
         default: true
     },
-    invoices: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Invoice'
-    }]
+    
 }, {
     timestamps: true,
     versionKey: false

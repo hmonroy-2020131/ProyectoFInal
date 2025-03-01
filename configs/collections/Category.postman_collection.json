@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "9d54ecc3-9907-498b-b79f-69839615f54b",
+		"name": "Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42630298"
+	},
+	"item": [
+		{
+			"name": "Listar ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjY5MzJmNGViMTY4MTFhMTAwZGYiLCJpYXQiOjE3NDA2MTc2MTgsImV4cCI6MTc0MDYyMTIxOH0.2ETd8V2OpxnVGLB9jipcmvjbZmLGRAZ02pXYk40srB4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"name\": \"Muebles\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar ",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjY5MzJmNGViMTY4MTFhMTAwZGYiLCJpYXQiOjE3NDA2MTc2MTgsImV4cCI6MTc0MDYyMTIxOH0.2ETd8V2OpxnVGLB9jipcmvjbZmLGRAZ02pXYk40srB4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Electronics\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/category/67bdf575697fe015004b5b54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"category",
+						"67bdf575697fe015004b5b54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjY5MzJmNGViMTY4MTFhMTAwZGYiLCJpYXQiOjE3NDA2MTc2MTgsImV4cCI6MTc0MDYyMTIxOH0.2ETd8V2OpxnVGLB9jipcmvjbZmLGRAZ02pXYk40srB4"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/category/67bdf575697fe015004b5b54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"category",
+						"67bdf575697fe015004b5b54"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,38 +1,36 @@
 [{
   "_id": {
-    "$oid": "67be516def6ba5b911eb660d"
+    "$oid": "67bfb6932f4eb16811a100df"
   },
   "name": "Elmer",
   "surname": "Santos",
   "username": "elmersantos",
   "email": "elmersantos@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$GGzn19sDF1urw8zg2k7qxQ$nY8pQRyBTuzf0+Zpibl0sl9jg2E3pfY8Nh3ST9lHN2E",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$ILvXfOezNyaN9J8zA886PQ$NCyr8ei+wyb0B2nsMTNf8U9DV7WdgYvaLDJAxvpZjQQ",
   "role": "ADMIN",
   "estado": true,
-  "invoices": [],
   "createdAt": {
-    "$date": "2025-02-25T23:25:33.906Z"
+    "$date": "2025-02-27T00:49:23.589Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T23:25:33.906Z"
+    "$date": "2025-02-27T00:49:23.589Z"
   }
 },
 {
   "_id": {
-    "$oid": "67be51c8ef6ba5b911eb6614"
+    "$oid": "67bfb6ed2f4eb16811a100e5"
   },
   "name": "Eithan",
   "surname": "Monroy",
   "username": "eithanmv",
   "email": "eithanmv@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$JQgjrA7yEIzV0/+jvwp7tQ$rlf3vmDfrzoIh6qNz4kcHxUppqQ2TR8iBUKFzdd5mIw",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$FBfofY2BEZ1aZHgJeamDNA$ZOy4o2/cReAH2ZVcUjMa4r0Fu8B7fTxEFkCEnnCPa3o",
   "role": "CLIENT",
   "estado": true,
-  "invoices": [],
   "createdAt": {
-    "$date": "2025-02-25T23:27:04.142Z"
+    "$date": "2025-02-27T00:50:53.886Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T23:27:04.142Z"
+    "$date": "2025-02-27T00:50:53.886Z"
   }
 }]

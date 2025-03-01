@@ -15,7 +15,7 @@
     "$date": "2025-02-25T23:53:03.912Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T23:53:03.912Z"
+    "$date": "2025-02-27T00:39:18.138Z"
   }
 },
 {
@@ -45,17 +45,17 @@
   "name": "Aspiradora Robot",
   "description": "Aspiradora inteligente con detección de obstáculos y programación automática.",
   "price": 299.99,
-  "stock": 15,
+  "stock": 12,
   "category": {
     "$oid": "67be587f2e86e1ffc38c2648"
   },
-  "sold": 0,
+  "sold": 3,
   "estado": true,
   "createdAt": {
     "$date": "2025-02-25T23:58:59.913Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T23:58:59.913Z"
+    "$date": "2025-02-27T23:21:44.310Z"
   }
 },
 {
@@ -65,17 +65,17 @@
   "name": "Teclado Mecánico RGB",
   "description": "Teclado mecánico retroiluminado con switches intercambiables.",
   "price": 109.99,
-  "stock": 35,
+  "stock": 33,
   "category": {
     "$oid": "67be58722e86e1ffc38c2644"
   },
-  "sold": 0,
+  "sold": 2,
   "estado": true,
   "createdAt": {
     "$date": "2025-02-25T23:59:23.905Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T23:59:23.905Z"
+    "$date": "2025-02-27T23:21:44.321Z"
   }
 },
 {
@@ -125,16 +125,16 @@
   "name": "Lego Starship Set",
   "description": "Set de construcción de una nave espacial con piezas detalladas.",
   "price": 89.99,
-  "stock": 50,
+  "stock": 47,
   "category": {
     "$oid": "67be58962e86e1ffc38c2650"
   },
-  "sold": 0,
+  "sold": 3,
   "estado": true,
   "createdAt": {
     "$date": "2025-02-26T00:04:10.248Z"
   },
   "updatedAt": {
-    "$date": "2025-02-26T00:04:10.248Z"
+    "$date": "2025-02-27T00:52:54.366Z"
   }
 }]

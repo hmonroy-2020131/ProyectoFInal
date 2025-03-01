@@ -1,1 +1,1 @@
-Ya los clientes pueden agregar productos al carrito.
+Las facturas se pueden editar por medio de el administrador y agregando colecciones y data nueva

@@ -1,18 +1,5 @@
 [{
   "_id": {
-    "$oid": "67be516def6ba5b911eb6610"
-  },
-  "name": "Default",
-  "estado": true,
-  "createdAt": {
-    "$date": "2025-02-25T23:25:33.946Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-25T23:25:33.946Z"
-  }
-},
-{
-  "_id": {
     "$oid": "67be5663221cde31fd2ad88f"
   },
   "name": "Ropa",
@@ -87,5 +74,18 @@
   },
   "updatedAt": {
     "$date": "2025-02-25T23:57:44.995Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bfb6932f4eb16811a100e2"
+  },
+  "name": "Default",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-27T00:49:23.597Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-27T00:49:23.597Z"
   }
 }]

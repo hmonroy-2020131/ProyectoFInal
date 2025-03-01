@@ -1,6 +1,7 @@
 import { response } from "express";
 import { hash, verify } from "argon2";
 import User from "./user.model.js";
+import Invoice from "../invoice/invoice.model.js";
 
 export const getUsers = async (req, res = response) => {
     try {
@@ -124,6 +125,73 @@ export const deleteUser = async (req, res = response) => {
             success: false,
             msg: 'Error deactivating user ❌',
             error,
+        });
+    }
+};
+
+export const updateUserRole = async (req, res = response) => {
+    try {
+        const { id } = req.params;
+        const { role } = req.body;
+
+        if (!["ADMIN", "CLIENT"].includes(role)) {
+            return res.status(400).json({
+                success: false,
+                msg: "Invalid role ❌",
+            });
+        }
+
+        const user = await User.findByIdAndUpdate(id, { role }, { new: true });
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                msg: "User not found 🔍❌",
+            });
+        }
+
+        res.status(200).json({
+            success: true,
+            msg: "User role updated ✅",
+            user,
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            success: false,
+            msg: "Error updating user role ❌",
+            error,
+        });
+    }
+};
+
+export const getUserInvoices = async (req, res = response) => {
+    try {
+        const { id } = req.params;
+
+        const user = await User.findById(id);
+        if (!user) {
+            return res.status(404).json({ 
+                success: false, 
+                msg: "User not found ❌" 
+            });
+        }
+
+        const invoices = await Invoice.find({ user: id }).populate("products.product");
+
+        if (!invoices.length) {
+            return res.status(404).json({ 
+                success: false, 
+                msg: "No invoices found for this user ❌" 
+            });
+        }
+
+        res.status(200).json({ success: true, invoices });
+    } catch (error) {
+        console.error("Error fetching invoices ❌", error);
+        res.status(500).json({ 
+            success: false, 
+            msg: "Error fetching invoices ❌", 
+            error: error.message 
         });
     }
 };

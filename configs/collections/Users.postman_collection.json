@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "ac9d3b29-fcc0-47da-829a-db0260b9cb14",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42630298"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar historial de el cliente",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjZlZDJmNGViMTY4MTFhMTAwZTUiLCJpYXQiOjE3NDA2OTgyMjcsImV4cCI6MTc0MDcwMTgyN30.DqdmtvbLwU6RFHPwCJSgNvSJsS2-drnt1cXEp0maBrs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/users//history/67bfb6ed2f4eb16811a100e5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"users",
+						"",
+						"history",
+						"67bfb6ed2f4eb16811a100e5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGFhMzYwZmYxN2JjZWY4NGRjZTYiLCJpYXQiOjE3NDA0OTY0NTUsImV4cCI6MTc0MDUwMDA1NX0.bNJgIMvANBnfSKI7J6ssCz1kU8EgX0ef-YYeUKr62Xc"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"password\": \"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/users/67bddaa360ff17bcef84dce6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"users",
+						"67bddaa360ff17bcef84dce6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGFhMzYwZmYxN2JjZWY4NGRjZTYiLCJpYXQiOjE3NDA0OTY1OTQsImV4cCI6MTc0MDUwMDE5NH0.VGfSngwK1OHLs-HFAIk78E3tOgkeWkcYaGXVB54XN88"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Brandon\",\r\n  \"surname\": \"Soberanis\",\r\n  \"username\": \"bsobe\",\r\n  \"email\": \"bsobe@gmail.com\",\r\n  \"password\": \"123456789\",\r\n  \"newPassword\": \"12345678\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/users/67bddaa360ff17bcef84dce6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"users",
+						"67bddaa360ff17bcef84dce6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar rol",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYjY5MzJmNGViMTY4MTFhMTAwZGYiLCJpYXQiOjE3NDA2MTc2MTgsImV4cCI6MTc0MDYyMTIxOH0.2ETd8V2OpxnVGLB9jipcmvjbZmLGRAZ02pXYk40srB4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\": \"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/ProyectoFinal/v1/users/update-role/67bfb6ed2f4eb16811a100e5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ProyectoFinal",
+						"v1",
+						"users",
+						"update-role",
+						"67bfb6ed2f4eb16811a100e5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
